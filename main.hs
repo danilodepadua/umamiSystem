@@ -1,3 +1,7 @@
+module Main where
+
+import Exibir_filmes (exibicao)
+
 main :: IO ()
 main = loop
 
@@ -16,6 +20,7 @@ loop = do
 casos :: String -> IO ()
 casos input = case input of
     "1" -> do 
+        exibicao
         loop
     "2" -> do 
         loop
